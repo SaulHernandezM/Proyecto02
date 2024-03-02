@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cannábis</title>
+    <link rel="stylesheet" />
+    <style>
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el cálculo del ancho */
+}
+
+body {
+    text-align: justify; 
+    background: #9eeea5;
+}
+
+#agrupar {
+    display: flex; /* Usa flexbox para un diseño más flexible */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten y envuelvan según el ancho */
+    margin: 15px auto;
+    text-align: left;
+}
+
+#cabecera {
+    text-align: center;
+    flex-basis: 100%; /* Hace que la cabecera ocupe el ancho completo */
+    background: #21e732;
+    padding: 40px;
+}
+
+#menu {
+    text-align: center;
+    flex-basis: 100%; /* Hace que el menú ocupe el ancho completo */
+    background: #8af16a;
+    padding: 5px 15px;
+}
+
+#seccion {
+    float: left;
+    width: 75%; /* Aumento el ancho de la sección */
+    margin: 20px;
+}
+
+#columna {
+    float: left;
+    width: 20%; /* Reduzco el ancho de la columna */
+    margin: 20px 0;
+}
+
+#pie {
+    flex-basis: 100%; /* Hace que el pie de página ocupe el ancho completo */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid black;
+}
+
+        h1 {
+            font: bold 20px verdana, sans-serif;
+        }
+
+        h2 {
+            font: bold 14px verdana, sans-serif;
+        }
+
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        article,
+        figure,
+        figcaption,
+        hgroup {
+            display: block;
+        }
+
+        #menu li {
+            display: inline-block;
+            list-style: none;
+            padding: 5px;
+            font: bold 14px verdana, sans-serif;
+        }
+
+        .iconos {
+            width: 35px;
+            height: 35px;
+        }
+
+        article {
+            background: #85ee70;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        article footer {
+            text-align: right;
+        }
+
+        .imagen {
+            width: 620px;
+            height: 400px;
+        }
+
+        .lista {
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>El Cannábis</h1>
+        </header>
+
+        <nav id="menu">
+            <ul>
+                <li><a class="lista" href="#">Inicio</a></li>
+                <li><a class="lista" href="#">Semillas de marihuana</a></li>
+                <li><a class="lista" href="#">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+
+        <section id="seccion">
+            <article>
+                <header>
+                    <h1>¿La Marihuana crea adicción?</h1> 
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Durante décadas, el posible potencial adictivo del cannabis se ha
+                    utilizado como argumento tanto por parte de los que defienden
+                    elprohibicionismo (quienes en muchas ocasiones han exacerbado el
+                    poder adictivo de esta sustancia), como por aquellos que defienden
+                    la legalización de la planta, que en muchas ocasiones han negado que
+                    el cannabis pueda producir algún tipo de dependencia o adicción. Ha
+                    llegado el momento de abordar esta cuestión desde un punto de vista
+                    más objetivo. El cannabis no es una sustancia inocua, por tanto, es
+                    necesario que el usuario tenga información veraz y contrastada sobre
+                    las consecuencias de su consumo.
+                </p>
+                <br>
+                <figure>
+                    <img class="imagen" src="Marihuana.png" />
+                </figure>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>¿La Marihuana crea tolerancia?</h1>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Sí. Por norma general, cuando el usuario tiene un
+                    <mark>consumo habitual</mark> que se prolonga en el tiempo,
+                    eventualmente termina por aumentar la dosis para poder conseguir el
+                    mismo efecto. Incluso, en algunos casos en los que el consumo de
+                    cannabis es abusivo, el usuario genera un nivel de tolerancia tan
+                    alto que ya no es capaz de sentir la psicoactividad del cannabis.
+                </p>
+                <footer>
+                    <p>comentarios (2)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>¿La Marihuana crea dependencia?</h1>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Varios estudios apuntan a que un consumo abusivo y habitual que se
+                    prolonga en el tiempo puede generar dependencia a la sustancia.
+                    Aunque el nivel de dependencia es mucho más leve que el de otras
+                    drogas psicoactivas, según el
+                    <mark>manual diagnóstico y estadístico de los trastornos mentales DSM
+                        IV-R</mark>, entre un 5% y un 10% de los consumidores de cannabis cumplen con
+                    los criterios de dependencia.
+                </p>
+                <br>
+                <p>
+                    Se ha demostrado que en algunos casos en los que el consumo es
+                    abusivo y prolongado, el usuario puede sufrir síndrome de
+                    abstinencia al interrumpir el consumo de marihuana. Los síntomas que
+                    puede padecer un consumidor con dependencia del cannabis si deja de
+                    consumir la sustancia son:
+                </p>
+                <br>
+                <ul>
+                    <li>Ansiedad</li>
+                    <li>Dificultad para dormir y trastornos del sueño</li>
+                    <li>Pérdida de apetito</li>
+                    <li>Irritabilidad</li>
+                </ul>
+                <br>
+                <h2>
+                    Factores de riesgo para el desarrollo de la dependencia al cannabis:
+                </h2>
+                <br>
+                <ul>
+                    <li>
+                        Inicio del consumo en una edad temprana. Varios estudios señalan
+                        que las personas que comienzan a consumir cannabis de forma
+                        regular durante la adolescencia, tienen más posibilidades de
+                        desarrollar dependencia a esta sustancia y un patrón de consumo
+                        adictivo.
+                    </li>
+                    <li>Una elevada frecuencia de uso de la sustancia.</li>
+                </ul>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>¿Cuáles son los síntomas de la dependencia a la marihuana?</h1>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <ul>
+                    <li>
+                        El usuario genera tolerancia a la sustancia: necesidad de aumentar
+                        la dosis progresivamente para conseguir el efecto deseado.
+                    </li>
+                    <li>
+                        Padecimiento del síndrome de abstinencia cuando cesa el consumo.
+                    </li>
+                    <li>
+                        Necesidad de recurrir a la sustancia para poder sentirse bien.
+                    </li>
+                </ul>
+                <br>
+                <figure>
+                    <img class="imagen" src="Marihuana2.jpg" />
+                </figure>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+        </section>
+
+        <aside id="columna">
+            <article>
+                <header>
+                    <h2><a href="#">Diferencias entre cañamo y marihuana</a></h1>
+                        <br>
+                        <p>Publicado 01-03-2024</p>
+                        <br>
+                </header>
+                <p>
+                    El cáñamo y la marihuana, dos plantas que pueden dar lugar a
+                    confusión, pues aunque pertenecen al mismo género, las d…
+                </p>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2><a href="#">Clases y tipos de marihuana</a></h2>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Hoy en día es fácil sentirse perdido a la hora de escoger qué
+                    variedad de marihuana cultivar. La incontable oferta de cepas…
+                </p>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2><a href="#">Marihuana Medicinal</a></h2>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Son muchos los lectores de nuestro blog que se interesan por las
+                    noticias sobre marihuana medicinal. En esta sección publicamos posts
+                    sobre el uso terapéutico del cannabis...
+                </p>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2><a href="#">Recetas con marihuana</a></h2>
+                    <br>
+                    <p>Publicado 01-03-2024</p>
+                    <br>
+                </header>
+                <p>
+                    Si comer es un placer y consumir marihuana otro, ¿por qué no unir
+                    dos de nuestros hobbies favoritos y disfrutar el doble de ambos?...
+                </p>
+                <footer>
+                    <p>comentarios (4)</p>
+                </footer>
+            </article>
+        </aside>
+
+        <footer id="pie">
+            <small>Derechos Reservados &copy; 2024 Saúl Hernández Mendoza</small>
+            <br>
+            <figure>
+                <img class="iconos" src="facebook.png" alt="" />
+                <img class="iconos" src="instagram.png" alt="" />
+                <img class="iconos" src="gmail.png" alt="" />
+                <img class="iconos" src="reddit.png" alt="" />
+                <img class="iconos" src="x.png" alt="" />
+                <img class="iconos" src="youtube.png" alt="" />
+            </figure>
+        </footer>
+    </div>
+</body>
+
+</html>
